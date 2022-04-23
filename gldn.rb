@@ -6,6 +6,6 @@ class Gldn < Formula
   license 'MIT'
 
   def install
-    bin.install 'bin/gldn'
+    bin.install 'gldn'
   end
 end
