@@ -6,6 +6,7 @@ class Gldn < Formula
   license 'MIT'
 
   def install
-    bin.install 'gldn'
+    libexec.install Dir['*']
+    bin.write_exec_script(libexec / 'exe' / 'gldn')
   end
 end
