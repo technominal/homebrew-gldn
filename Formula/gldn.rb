@@ -1,11 +1,11 @@
 class Gldn < Formula
-  desc "Manage dotfiles and setup for apps installed on your localhost"
-  homepage "https://github.com/technominal/gldn"
-  version "0.1"
-
-  url "https://github.com/technominal/gldn/archive/refs/tags/v0.1.0.zip", :using => :curl
+  desc 'Golden: A tool for managing Dotfiles and setup scripts'
+  homepage 'https://github.com/technominal/gldn'
+  url 'https://github.com/technominal/gldn/archive/refs/tags/v0.1.0.tar.gz'
+  sha256 '7bb6d2dfc906be5df2a3657f75a4ab538b6f14456b479a4689ad90d5b83265c4'
+  license 'MIT'
 
   def install
-    bin.install "exe/gldn"
+    bin.install 'exe/gldn'
   end
 end
