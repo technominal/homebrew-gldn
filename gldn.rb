@@ -6,8 +6,6 @@ class Gldn < Formula
   head 'https://github.com/technominal/gldn.git', branch: 'master'
   license 'MIT'
 
-  depends_on ruby: '3.1'
-
   def install
     libexec.install Dir['*']
     bin.write_exec_script(libexec / 'exe' / 'gldn')
